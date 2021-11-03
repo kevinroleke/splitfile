@@ -9,7 +9,7 @@ import (
 )
 
 func Split(chunks int, f *io.Reader, prefix string) error {
-	lineCount, err := LineCounter(f)
+	lineCount, err := LineCounter(*f)
 	if err != nil {
 		return err
 	}
