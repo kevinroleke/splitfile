@@ -21,7 +21,7 @@ func main() {
 		panic(err)
 	}
 
-	splitfile.SplitFile(16, f, prefix)
+	splitfile.SplitFile(chunks, f, prefix)
 }
 ```
 
