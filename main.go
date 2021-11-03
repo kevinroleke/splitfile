@@ -8,11 +8,13 @@ import (
 	"strconv"
 )
 
-func Split(chunks int, f io.Reader, prefix string) error {
+func Split(chunks int, f *os.File, prefix string) error {
 	lineCount, err := LineCounter(f)
 	if err != nil {
 		return err
 	}
+
+	f.Seek(0, io.SeekStart)
 
 	var (
 		chunkWriters []*bufio.Writer
