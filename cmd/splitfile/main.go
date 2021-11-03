@@ -4,6 +4,7 @@ import (
 	"flag"
 	"log"
 	"os"
+	"io"
 	"github.com/kevinroleke/splitfile"
 )
 
