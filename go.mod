@@ -1,3 +1,3 @@
-module github.com/kevinroleke/split-file
+module github.com/kevinroleke/splitfile
 
 go 1.16
